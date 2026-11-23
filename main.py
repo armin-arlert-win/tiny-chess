@@ -1,8 +1,8 @@
 import json,os
 from urllib.request import Request,urlopen
-U=os.getenv("MAKEFUN_ENV_URL") or os._exit(1)
+H=os.getenv("MAKEFUN_ENV_URL") or os._exit(1)
 def P(p,b):
- q=Request(U+p,data=json.dumps(b).encode())
+ q=Request(H+p,data=json.dumps(b).encode())
  try:
   with urlopen(q) as r:return json.load(r)
  except:os._exit(1)
@@ -18,7 +18,7 @@ def t(p,s):
  f=s&7;r=s>>4
  if p<0:r=7-r
  c=6-abs(f-3)-abs(r-3)
- return ((14*r+2*c,6*c,4*c)+(2*c,)*3)[abs(p)-1]
+ return (4*r+2*c,6*c,4*c,2*c,2*c,-2*c)[abs(p)-1]
 def E(Y):
  v=sum(p//abs(p)*(V[abs(p)]+t(p,i)) for i,p in enumerate(Y[0]) if p)
  return v if Y[1]>0 else -v
@@ -118,7 +118,7 @@ def O(Y,ms):
 def S(Y,d,al,be,pl):
  global ND
  ND+=1
- if ND>=40000:raise X
+ if ND>=25000:raise X
  if d<=0:
   st=E(Y)
   if st>=be:return be
@@ -141,10 +141,9 @@ def C(fe,lg):
  Y=F(fe);ND=0
  lm=[m for m in G(Y) if U(m) in lg]
  if not lm:return lg[0]
- bm=lm[0]
+ bm=lm[0];al=-10**9
  for d in range(1,12):
   try:
-   al=-10**9
    for m in O(Y,lm):
     sc=-S(M(Y,m),d-1,-10**9,-al,1)
     if sc>al:al=sc;bm=m
