@@ -8,7 +8,7 @@ D=(0,0,KN,B,R,B+R,KG);N=(0,0,1,7,7,7,1)
 CR={0:2,7:1,112:8,119:4}
 V=(0,100,320,330,500,900,0)
 TT={};ND=0
-K=("%.5?08198??G)::@(1')7??H)*HO.@@I&NIPPIN`",']V\\V^UUEE==6PFVPPF_VZJbJYQF@`Y[]@OO>Y>>5JFF.WGG@5G]5XH',",<.><D')('&>>Y%R)22*8GY`#&`X&F",'?N`WVM]OZRRJ^VYQbB_]WP^aaYP5OFV::8F8','+;%.2:/?&%;C8I.@#3?G@.IO5$,3%&&8CKGN8T','`WUMPAVGTDWNN2^BBJJ:2990:220')
+K=("&-%.=F5DDU1A>G-E(D","PVZRYQ^L`YY>LDVG]AA8D/G6",",<.6%IIP8BBH&%%RRY","?N`WVMN?]H^>>0WN02","+;%./?(/').7&'>F5D#$'<DS<TSD","`WUMPAVGTDWNN2^BBJJ:2990:220")
 class X(Exception):pass
 def E(Y):
  v=0
